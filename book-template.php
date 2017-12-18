@@ -5,6 +5,7 @@ Description: Plugin per l'inserimento dei dati editoriali di un libro o di un fu
 Version: 0.4
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
+Plugin URI: https://github.com/ulaulaman/book-template
 */
 /* ------------------------------------------------------ */
 # ---------------------------------------------------------
