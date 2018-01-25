@@ -2,7 +2,7 @@
 /*
 Plugin Name: Book template
 Description: Plugin per l'inserimento dei dati editoriali di un libro o di un fumetto con uno shortcode. Al momento solo in italiano.
-Version: 0.5
+Version: 0.5.1
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
 Plugin URI: https://github.com/ulaulaman/book-template
@@ -25,6 +25,7 @@ License: GPLv2 or later
 # 0.3 ottimizzazione codice shortcode
 # 0.4 aggiunta box con messaggio per l'uso dello shortcode in cima al post
 # 0.5 spostamento del metabox di messaggio sulla colonna destra
+# 0.5.1 corretto errore di battitura e negli if di controllo
 #
 # Aggiunta metabox
 add_action( 'load-post.php', 'bookdata_meta_box_setup' );
@@ -55,7 +56,7 @@ function bookdata_class_meta_box( $post ) { ?>
   <?php wp_nonce_field( basename( __FILE__ ), 'bookdata_class_nonce' ); ?>
 
   <p>
-    <label for="bookdata-post-class">Esempio generico [bookdata title="Titolo" author="Autori" publisher="Editore" date="Data" pages ="numero pagine" type="Borssurato,Cartonato,Digitale/on-line" price="prezzo valuta/gratuito"]<br/>In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col="colore,b/n"]<br/>Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]<br/>I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli.</label></p>
+    <label for="bookdata-post-class">Esempio generico [bookdata title="Titolo" author="Autori" publisher="Editore" date="Data" pages ="numero pagine" type="brossurato,cartonato,digitale/on-line" price="prezzo valuta/gratuito"]<br/>In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col="colore,b/n"]<br/>Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]<br/>I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli.</label></p>
 <?php }
 
 # Creazione shortcode dati editoriali
@@ -91,7 +92,7 @@ add_shortcode('bookdata', 'bookdata');
    {$book = $book;}
    
    if ( $col <> null )
-   {$book = $book.'<br/>'.$publisher.', '.$date.'<br/>'.$pages.' pagine, '.$col.' - '.$price;}
+   {$book = $book.'<br/>'.$publisher.', '.$date.'<br/>'.$pages.' pagine, '.$type.', '.$col.' - '.$price;}
    else
    {$book = $book.'<br/>'.$publisher.', '.$date.'<br/>'.$pages.' pagine, '.$type.' - '.$price;}
 
