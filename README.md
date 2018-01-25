@@ -23,3 +23,4 @@ function dati_editoriali () {<br/>
 0.4 aggiunta box con messaggio per l'uso dello shortcode in cima al post<br/>
 0.5 spostamento del metabox di messaggio sulla colonna destra<br/>
 0.5.1 corretto errore di battitura e negli if di controllo
+<div align="center"><img src="https://github.com/ulaulaman/book-template/blob/master/screenshot_bookdata_metabox.jpg" /><br/>Screenshot del metabox con le istruzioni per l'uso dello shortcode</div>
