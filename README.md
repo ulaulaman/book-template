@@ -21,4 +21,5 @@ function dati_editoriali () {<br/>
 0.2.2 nomi attributi: dall'italiano all'inglese<br/>
 0.3 ottimizzazione codice shortcode<br/>
 0.4 aggiunta box con messaggio per l'uso dello shortcode in cima al post<br/>
-0.5 spostamento del metabox di messaggio sulla colonna destra
+0.5 spostamento del metabox di messaggio sulla colonna destra<br/>
+0.5.1 corretto errore di battitura e negli if di controllo
