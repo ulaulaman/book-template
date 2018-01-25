@@ -7,18 +7,18 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 
 ## changelog
 
-0.3 creazione shortcode con testo di base
-add_shortcode('dati-editoriali', 'dati_editoriali');
-
-function dati_editoriali () {
-  $text = Ciao;
-  return $text;
-}
-
-0.1.1 Sostituizione di "Ciao" con "Abbiamo parlato di" con formattazione
-0.2 aggiunta attributi: titolo
-0.2.1 aggiunta altri dati editoriali
-0.2.2 nomi attributi: dall'italiano all'inglese
-0.3 ottimizzazione codice shortcode
-0.4 aggiunta box con messaggio per l'uso dello shortcode in cima al post
+0.3 creazione shortcode con testo di base<br/>
+add_shortcode('dati-editoriali', 'dati_editoriali');<br/>
+<br/>
+function dati_editoriali () {<br/>
+  $text = Ciao;<br/>
+  return $text;<br/>
+}<br/>
+<br/>
+0.1.1 Sostituizione di "Ciao" con "Abbiamo parlato di" con formattazione<br/>
+0.2 aggiunta attributi: titolo<br/>
+0.2.1 aggiunta altri dati editoriali<br/>
+0.2.2 nomi attributi: dall'italiano all'inglese<br/>
+0.3 ottimizzazione codice shortcode<br/>
+0.4 aggiunta box con messaggio per l'uso dello shortcode in cima al post<br/>
 0.5 spostamento del metabox di messaggio sulla colonna destra
