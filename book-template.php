@@ -6,6 +6,7 @@ Version: 0.5.1
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
 Plugin URI: https://github.com/ulaulaman/book-template
+GitHub Plugin URI: https://github.com/ulaulaman/book-template
 License: GPLv2 or later
 */
 /* ------------------------------------------------------ */
