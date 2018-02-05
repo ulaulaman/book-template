@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Book template
-Description: Plugin per l'inserimento dei dati editoriali di un libro o di un fumetto con uno shortcode. Al momento solo in italiano.
-Version: 0.5.1
+Description: Plugin in italiano che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto.
+Version: 0.5.2
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
 Plugin URI: https://github.com/ulaulaman/book-template
@@ -10,24 +10,6 @@ GitHub Plugin URI: https://github.com/ulaulaman/book-template
 License: GPLv2 or later
 */
 /* ------------------------------------------------------ */
-# ---------------------------------------------------------
-# 0.3 creazione shortcode con testo di base
-#add_shortcode('dati-editoriali', 'dati_editoriali');
-#
-# function dati_editoriali () {
-#   $text = Ciao;
-#   return $text;
-#}
-#
-# 0.1.1 Sostituizione di "Ciao" con "Abbiamo parlato di" con formattazione
-# 0.2 aggiunta attributi: titolo
-# 0.2.1 aggiunta altri dati editoriali
-# 0.2.2 nomi attributi: dall'italiano all'inglese
-# 0.3 ottimizzazione codice shortcode
-# 0.4 aggiunta box con messaggio per l'uso dello shortcode in cima al post
-# 0.5 spostamento del metabox di messaggio sulla colonna destra
-# 0.5.1 corretto errore di battitura e negli if di controllo
-#
 # Aggiunta metabox
 add_action( 'load-post.php', 'bookdata_meta_box_setup' );
 add_action( 'load-post-new.php', 'bookdata_meta_box_setup' );
