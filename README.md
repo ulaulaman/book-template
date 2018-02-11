@@ -5,7 +5,7 @@ Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [
 I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli
 
 ## Screenshot
-<div align="center"><img src="https://github.com/ulaulaman/book-template/blob/master/screenshot_bookdata_metabox.jpg" /><br/>Metabox con le istruzioni per l'uso dello shortcode</div>
+<div align="center"><img src="https://github.com/ulaulaman/book-template/blob/master/screenshot_bookdata_metabox.jpg?raw=true" /><br/>*Metabox con le istruzioni per l'uso dello shortcode*</div>
 
 ## Changelog
 * 0.5.2 integrazione per l'aggiornamento tramite il [GitHub Updater](https://github.com/afragen/github-updater)
