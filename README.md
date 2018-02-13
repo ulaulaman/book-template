@@ -6,9 +6,15 @@ Oltre allo shortcode, il plugin aggiunge un metabox di istruzioni ai post.
 
 ### Esempi
 
-Esempio generico [bookdata title="Titolo" author="Autori" publisher="Editore" date="Data" pages ="numero pagine" type="Borssurato,Cartonato,Digitale/on-line" price="prezzo valuta/gratuito"]
-In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col="colore,b/n"]
-Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]
+Esempio generico
+
+[bookdata title="Titolo" author="Autori" publisher="Editore" date="Data" pages ="numero pagine" type="Borssurato,Cartonato,Digitale/on-line" price="prezzo valuta/gratuito"]
+
+In caso di fumetto o libro illustrato, inserire il colore
+
+[bookdata ... col="colore,b/n"]
+
+Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]<br/>
 I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli!
 
 ## Screenshot
@@ -19,7 +25,7 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 2. Vai nelle impostazioni del GitHub Updater, quindi nella scheda *Install Plugin*
 3. Qui incolla il *permalink* del [*repository* su GitHub](https://github.com/ulaulaman/book-template)
 4. Una volta installato, attiva
-5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2018.0213/book-template.2018.0213.zip) in allegato alla [release 2018.0213](https://github.com/ulaulaman/book-template/releases/tag/2018.0213)
+5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2018.0213/book-template.2018.0213.zip) in allegato alla [release 2018.0213](https://github.com/ulaulaman/book-template/releases/tag/2018.0213), quindi scompattalo all'interno della cartella dei plugin della tua installazione wordpress
 
 ## Changelog
 * 2018.0213 modificato il codice per permettere le traduzioni in preparazione dello spostamento in [Citations tools](https://wordpress.org/plugins/citations-tools/)
