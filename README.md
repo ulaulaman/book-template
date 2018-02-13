@@ -19,7 +19,7 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 2. Vai nelle impostazioni del GitHub Updater, quindi nella scheda *Install Plugin*
 3. Qui incolla il *permalink* del [*repository* su GitHub](https://github.com/ulaulaman/book-template)
 4. Una volta installato, attiva
-5. In alternativa scarica il *file* .zip in allegato alla release 2018.0213
+5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2018.0213/book-template.2018.0213.zip) in allegato alla [release 2018.0213](https://github.com/ulaulaman/book-template/releases/tag/2018.0213)
 
 ## Changelog
 * 2018.0213 modificato il codice per permettere le traduzioni in preparazione dello spostamento in [Citations tools](https://wordpress.org/plugins/citations-tools/)
