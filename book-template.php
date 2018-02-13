@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Book template dev
+Plugin Name: Book template
 Description: Plugin in italiano che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto.
 Version: 2018.0213
 Author: Gianluigi Filippelli
