@@ -14,9 +14,14 @@ Oltre allo shortcode, il plugin aggiunge un metabox di istruzioni ai post.
 
 ## Esempi
 
-Esempio generico [bookdata title="Titolo" author="Autori" publisher="Editore" date="Data" pages ="numero pagine" type="Borssurato,Cartonato,Digitale/on-line" price="prezzo valuta/gratuito"]
+Esempio generico
+
+[bookdata title="Titolo" author="Autore/i" publisher="Editore" date="Data" pages ="numero pagine" type="Borssurato,Cartonato,Digitale/on-line" price="prezzo/gratuito"]
+
 In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col="colore,b/n"]
+
 Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]
+
 I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli!
 
 == Screenshots ==
@@ -27,9 +32,11 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 2. Vai nelle impostazioni del GitHub Updater, quindi nella scheda *Install Plugin*
 3. Qui incolla il *permalink* del [*repository* su GitHub](https://github.com/ulaulaman/book-template)
 4. Una volta installato, attiva
-5. In alternativa scarica il *file* .zip in allegato alla release 2018.0213, quindi scompattalo all'interno della cartella dei plugin della tua installazione wordpress
+5. In alternativa scarica il *file* .zip in allegato alla release 2018.0213, quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 == Changelog ==
+* 2018.0213.1 Aggiornamento estetico:
+  * Sostituito il trattino prima del prezzo. Sistemate alcunie parti nel metabox delle istruzioni
 * 2018.0213 modificato il codice per permettere le traduzioni in preparazione dello spostamento in [Citations tools](https://wordpress.org/plugins/citations-tools/)
 * 0.5.2 integrazione per l'aggiornamento tramite il [GitHub Updater](https://github.com/afragen/github-updater)
 * 0.5.1 corretto errore di battitura e negli if di controllo
