@@ -32,7 +32,6 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 5. In alternativa scarica il *file* .zip in allegato alla release 2018.0213, quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 == Changelog ==
-* 2018.0213.2 Aggiornamento di prova
 * 2018.0213.1 Aggiornamento estetico:
   * Sostituito il trattino prima del prezzo. Sistemate alcunie parti nel metabox delle istruzioni
 * 2018.0213 modificato il codice per permettere le traduzioni in preparazione dello spostamento in [Citations tools](https://wordpress.org/plugins/citations-tools/)
