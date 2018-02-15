@@ -2,7 +2,7 @@
 /*
 Plugin Name: Book template
 Description: Plugin in italiano che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto.
-Version: 2018.0213.1
+Version: 2018.0213.2
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
 Plugin URI: https://ulaulaman.github.io/book-template/
