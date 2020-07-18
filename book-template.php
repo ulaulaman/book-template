@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Book template
-Description: Plugin in italiano che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto.
-Version: 2018.0326
+Plugin Name: Book Template
+Description: Plugin che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto.
+Version: 2020.0718
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
 Plugin URI: https://ulaulaman.github.io/book-template/
@@ -46,7 +46,7 @@ function bookdata_class_meta_box( $post ) { ?>
   <?php wp_nonce_field( basename( __FILE__ ), 'bookdata_class_nonce' ); ?>
 
   <p>
-    <label for="bookdata-post-class"><?php _e( 'Esempio generico [bookdata title="Titolo" author="Autore/i" publisher="Editore" date="Data" pages ="numero pagine" type="brossurato,cartonato,digitale/on-line" price="prezzo/gratuito"]', 'book-template' ); ?><br/><?php _e(' In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col="colore,b/n"]', 'book-template' ); ?><br/><?php _e( 'Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]', 'book-template' ); ?><br/><?php _e( 'I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli.', 'book-template' ); ?></label></p>
+    <label for="bookdata-post-class"><?php _e( 'Esempio generico [bookdata title="Titolo" author="Autore/i" publisher="Editore" date="Data" pages ="numero pagine" type="brossurato,cartonato,digitale/on-line" price="prezzo/gratuito"]', 'book-template-1' ); ?><br/><?php _e(' In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col="colore,b/n"]', 'book-template-2' ); ?><br/><?php _e( 'Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"] ed eventuali note aggiuntive [bookdata ... notes="Note aggiuntive"]', 'book-template-3' ); ?><br/><?php _e( 'I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli.', 'book-template-4' ); ?></label></p>
 <?php }
 
 # creazione shortcode dati editoriali
@@ -74,7 +74,7 @@ add_shortcode( 'bookdata', 'bookdata' );
       )
    );
 
-   $intro = __( 'Abbiamo parlato di', 'book-template' );
+   $intro = __( 'Abbiamo parlato di:', 'book-template' );
 
    $book = '<p><strong>'.$intro.'</strong>:<br/><em>'.$title.'</em><br/>'.$author;
    
