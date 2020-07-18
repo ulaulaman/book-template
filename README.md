@@ -1,4 +1,4 @@
-*Plugin* in italiano che aggiunge uno *shortcode* per la creazione di un box con i dati editoriali di un libro o di un fumetto.
+*Plugin* che aggiunge uno *shortcode* per la creazione di un box con i dati editoriali di un libro o di un fumetto.
 
 ## Descrizione
 
@@ -28,6 +28,7 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2018.0213/book-template.2018.0213.zip) in allegato alla [release 2018.0213](https://github.com/ulaulaman/book-template/releases/tag/2018.0213), quindi scompattalo all'interno della cartella dei plugin della tua installazione wordpress
 
 ## Changelog
+* 2020.0718 Aggiunti file delle lingue: italiano di default, inglese come traduzione
 * 2018.0326 Corretto errore che raddoppia la parola "pagine" nella scheda dei dati editoriali
 * 2018.0213.1 Aggiornamento estetico
   * Sostituito il trattino prima del prezzo. Sistemate alcunie parti nel metabox delle istruzioni
