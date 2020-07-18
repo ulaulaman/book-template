@@ -32,6 +32,7 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 5. In alternativa scarica il *file* .zip in allegato alla release 2018.0213, quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 == Changelog ==
+* 2020.0718.1: corretti errori codice
 * 2020.0718 Aggiunti file delle lingue: italiano di default, inglese come traduzione
 * 2018.0326 Corretto errore che raddoppia la parola "pagine" nella scheda dei dati editoriali
 * 2018.0213.1 Aggiornamento estetico:
