@@ -21,11 +21,11 @@ msgstr "Insert book data"
 #: book-template.php:49
 msgid ""
 "Esempio generico [bookdata title=\"Titolo\" author=\"Autore/i\" publisher="
-"\"Editore\" date=\"Data\" pages =\"numero pagine\" type=\"brossurato,"
+"\"Editore\" date=\"Data\" pages=\"numero pagine\" type=\"brossurato,"
 "cartonato,digitale/on-line\" price=\"prezzo/gratuito\"]"
 msgstr ""
 "Example: [bookdata title=\"Title\" author=\"Author/s\" publisher=\"Publisher"
-"\" date=\"date\" pages =\"page number\" type=\"paperback,hard cover,e-book,"
+"\" date=\"date\" pages=\"page number\" type=\"paperback,hard cover,e-book,"
 "on-line\" price=\"price/free\"]"
 
 #: book-template.php:49
