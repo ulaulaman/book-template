@@ -1,0 +1,49 @@
+# This file is distributed under the same license as the Book Template package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Book Template 2020.0718-beta\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/plugins/widget-for-co-authors/\n"
+"POT-Creation-Date: 2020-07-18 01:13:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: book-template.php:31
+msgid "Inserimento dati editoriali"
+msgstr ""
+
+#: book-template.php:49
+msgid "Esempio generico [bookdata title=\"Titolo\" author=\"Autore/i\" publisher=\"Editore\" date=\"Data\" pages =\"numero pagine\" type=\"brossurato,cartonato,digitale/on-line\" price=\"prezzo/gratuito\"]"
+msgstr ""
+
+#: book-template.php:49
+msgid "In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col=\"colore,b/n\"]"
+msgstr ""
+
+#: book-template.php:49
+msgid "Possono essere inseriti opzionalmente ISBN [bookdata ... isbn=\"codice\"] o ISSN [bookdata ... issn=\"codice\"], il traduttore [bookdata ... translator=\"Traduttore\"] ed eventuali note aggiuntive [bookdata ... notes=\"Note aggiuntive\"]"
+msgstr ""
+
+#: book-template.php:49
+msgid "I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli."
+msgstr ""
+
+#: book-template.php:77
+msgid "Abbiamo parlato di:"
+msgstr ""
+
+#: book-template.php:82
+msgid "Traduzione di "
+msgstr ""
+
+#: book-template.php:87
+msgid "pagine"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Gianluigi Filippelli"
+msgstr ""
