@@ -29,15 +29,15 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 2. Vai nelle impostazioni del GitHub Updater, quindi nella scheda *Install Plugin*
 3. Qui incolla il *permalink* del [*repository* su GitHub](https://github.com/ulaulaman/book-template)
 4. Una volta installato, attiva
-5. In alternativa scarica il *file* .zip in allegato alla release 2018.0213, quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
+5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2020.0813/book-template.2020.0813.zip) in allegato alla [release 2018.0213](https://github.com/ulaulaman/book-template/releases/tag/2020.0813), quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 == Changelog ==
-* 2020.0813 Aggiunto allo shortcode il campo dell'età consigliata
+* 2020.0813 Aggiunto allo *shortcode* il campo dell'età consigliata
 * 2020.0718.1 Corretti errori codice
-* 2020.0718 Aggiunti file delle lingue: italiano di default, inglese come traduzione
+* 2020.0718 Aggiunti file delle lingue: italiano di *default*, inglese come traduzione
 * 2018.0326 Corretto errore che raddoppia la parola "pagine" nella scheda dei dati editoriali
-* 2018.0213.1 Aggiornamento estetico:
-  * Sostituito il trattino prima del prezzo. Sistemate alcunie parti nel metabox delle istruzioni
+* 2018.0213.1 Aggiornamento estetico
+  * Sostituito il trattino prima del prezzo. Sistemate alcunie parti nel *metabox* delle istruzioni
 * 2018.0213 modificato il codice per permettere le traduzioni in preparazione dello spostamento in [Citations tools](https://wordpress.org/plugins/citations-tools/)
 * 0.5.2 integrazione per l'aggiornamento tramite il [GitHub Updater](https://github.com/afragen/github-updater)
 * 0.5.1 corretto errore di battitura e negli if di controllo
