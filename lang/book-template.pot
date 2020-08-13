@@ -21,23 +21,27 @@ msgid "In caso di fumetto o libro illustrato, inserire il colore [bookdata ... c
 msgstr ""
 
 #: book-template.php:49
-msgid "Possono essere inseriti opzionalmente ISBN [bookdata ... isbn=\"codice\"] o ISSN [bookdata ... issn=\"codice\"], il traduttore [bookdata ... translator=\"Traduttore\"] ed eventuali note aggiuntive [bookdata ... notes=\"Note aggiuntive\"]"
+msgid "Possono essere inseriti opzionalmente ISBN [bookdata ... isbn=\"codice\"] o ISSN [bookdata ... issn=\"codice\"], il traduttore [bookdata ... translator=\"Traduttore\"], l'età consigliata  [bookdata ... age=\"età consigliata\"] ed eventuali note aggiuntive [bookdata ... notes=\"Note aggiuntive\"]"
 msgstr ""
 
 #: book-template.php:49
 msgid "I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli."
 msgstr ""
 
-#: book-template.php:77
+#: book-template.php:78
 msgid "Abbiamo parlato di:"
 msgstr ""
 
-#: book-template.php:82
+#: book-template.php:83
 msgid "Traduzione di "
 msgstr ""
 
 #: book-template.php:87
 msgid "pagine"
+msgstr ""
+
+#: book-template.php:96
+msgid "Lettura consigliata per "
 msgstr ""
 
 #. Description of the plugin/theme

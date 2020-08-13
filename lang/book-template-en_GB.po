@@ -39,12 +39,13 @@ msgstr ""
 msgid ""
 "Possono essere inseriti opzionalmente ISBN [bookdata ... isbn=\"codice\"] o "
 "ISSN [bookdata ... issn=\"codice\"], il traduttore [bookdata ... translator="
-"\"Traduttore\"] ed eventuali note aggiuntive [bookdata ... notes=\"Note "
-"aggiuntive\"]"
+"\"Traduttore\"], l'età consigliata  [bookdata ... age=\"età consigliata\"] "
+"ed eventuali note aggiuntive [bookdata ... notes=\"Note aggiuntive\"]"
 msgstr ""
 "You can also add ISBN [bookdata ... isbn=\"code\"] or ISSN [bookdata ... "
-"issn=\"code\"], translator [bookdata ... translator=\"Translator\"] and "
-"notes [bookdata ... notes=\"Notes\"]"
+"issn=\"code\"], translator [bookdata ... translator=\"Translator\"], "
+"recommended age [bookdata ... age=\"age\"] and any additional notes "
+"[bookdata ... notes=\"text\"]"
 
 #: book-template.php:49
 msgid ""
@@ -54,17 +55,21 @@ msgstr ""
 "Don't worry about the order of data: the plugin will take care of "
 "reordering them."
 
-#: book-template.php:77
+#: book-template.php:78
 msgid "Abbiamo parlato di:"
 msgstr "We write about:"
 
-#: book-template.php:82
+#: book-template.php:83
 msgid "Traduzione di "
-msgstr "Translation by "
+msgstr "Translation by:"
 
 #: book-template.php:87
 msgid "pagine"
 msgstr "pages"
+
+#: book-template.php:96
+msgid "Lettura consigliata per "
+msgstr "Reading recommended for"
 
 #. Description of the plugin/theme
 msgid ""
