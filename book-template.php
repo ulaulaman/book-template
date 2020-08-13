@@ -77,7 +77,7 @@ add_shortcode( 'bookdata', 'bookdata' );
 
    $intro = __( 'Abbiamo parlato di:', 'book-template' );
 
-   $book = '<p><strong>'.$intro.'</strong>:<br/><em>'.$title.'</em><br/>'.$author;
+   $book = '<p><strong>'.$intro.'</strong><br/><em>'.$title.'</em><br/>'.$author;
    
    if ( $translator <> null )
    {$translator = __( 'Traduzione di ', 'book-template' ).$translator;
