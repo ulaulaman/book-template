@@ -20,7 +20,7 @@ Esempio generico
 
 In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col="colore,b/n"]
 
-Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]
+Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"], l'età consigliata  [bookdata ... age="età consigliata"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]
 
 I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli!
 
@@ -32,7 +32,8 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il plug
 5. In alternativa scarica il *file* .zip in allegato alla release 2018.0213, quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 == Changelog ==
-* 2020.0718.1: corretti errori codice
+* 2020.0813 Aggiunto allo shortcode il campo dell'età consigliata
+* 2020.0718.1 Corretti errori codice
 * 2020.0718 Aggiunti file delle lingue: italiano di default, inglese come traduzione
 * 2018.0326 Corretto errore che raddoppia la parola "pagine" nella scheda dei dati editoriali
 * 2018.0213.1 Aggiornamento estetico:
