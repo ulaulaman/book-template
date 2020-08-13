@@ -69,7 +69,7 @@ msgstr "pages"
 
 #: book-template.php:96
 msgid "Lettura consigliata per "
-msgstr "Reading recommended for"
+msgstr "Reading recommended for "
 
 #. Description of the plugin/theme
 msgid ""
