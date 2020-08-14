@@ -2,7 +2,7 @@
 /*
 Plugin Name: Book Template
 Description: Plugin che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto.
-Version: 2020.0814.dev
+Version: 2020.0813
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
 Plugin URI: https://ulaulaman.github.io/book-template/
@@ -114,38 +114,6 @@ add_shortcode( 'bookdata', 'bookdata' );
 
    $text = $book;
    return $text;
-}
-
-/**
- * Add TinyMCE buttons for shortcode
- */
-
-add_action( 'init', 'bookdata_tinymce_shortcode_buttons' );
-
-add_filter( 'tiny_mce_version', 'bookdata_refresh_tinymce' );
-function pilau_tinymce_shortcode_buttons() {
-	// Don't bother doing this stuff if the current user lacks permissions
-	if ( ! current_user_can( 'edit_posts' ) && ! current_user_can( 'edit_pages' ) )
-		return;
-	// Add only in Rich Editor mode
-	//if ( get_user_option( 'rich_editing' ) == 'true' ) {
-	//	add_filter( 'mce_external_plugins', 'pilau_tinymce_plugins' );
-	//	add_filter( 'mce_buttons', 'pilau_register_tinymce_shortcode_buttons' );
-	//}
-}
-
-function bookdata_register_tinymce_shortcode_buttons( $buttons ) {
-	array_push( $buttons, "|", "bookdata" );
-	return $buttons;
-}
-function bookdata_tinymce_plugins( $plugin_array ) {
-	$plugin_array['bookdata'] = get_template_directory_uri() . '/assets/js/tinymce-buttons.js';
-	return $plugin_array;
-}
-
-function bookdata_refresh_tinymce( $ver ) {
-	$ver += 3;
-	return $ver;
 }
 
 /* ------------------------------------------------------ */
