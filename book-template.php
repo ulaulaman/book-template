@@ -8,21 +8,20 @@ Author URI: http://dropseaofulaula.blogspot.it/
 Plugin URI: https://ulaulaman.github.io/book-template/
 License: GPLv2 or later
 */
-/* ------------------------------------------------------ */
-# Load translations
+# Caricamento traduzioni
 add_action('plugins_loaded', 'bt_load_translations');
 function bt_load_translations() {
 	load_plugin_textdomain( 'book-template', false, dirname( plugin_basename(__FILE__) ) . '/lang/' );
 }
 
-# Aggiunta metabox
+# Caricamento metabox
 add_action( 'load-post.php', 'bookdata_meta_box_setup' );
 add_action( 'load-post-new.php', 'bookdata_meta_box_setup' );
 
 # Setup metabox
 function bookdata_meta_box_setup() {
 
-# aggiunta del metabox
+# Aggiunta del metabox
   add_action( 'add_meta_boxes', 'bookdata_meta_box' );
 }
 
@@ -40,7 +39,7 @@ function bookdata_meta_box() {
   );
 }
 
-# mostra il metabox
+# Mostra il metabox
 function bookdata_class_meta_box( $post ) { ?>
 
   <?php wp_nonce_field( basename( __FILE__ ), 'bookdata_class_nonce' ); ?>
@@ -49,7 +48,7 @@ function bookdata_class_meta_box( $post ) { ?>
     <label for="bookdata-post-class"><?php _e( 'Esempio generico [bookdata title="Titolo" author="Autore/i" publisher="Editore" date="Data" pages="numero pagine" type="brossurato,cartonato,digitale/on-line" price="prezzo/gratuito"]', 'book-template' ); ?><br/><?php _e(' In caso di fumetto o libro illustrato, inserire il colore [bookdata ... col="colore,b/n"]', 'book-template' ); ?><br/><?php _e( 'Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"], l\'età consigliata  [bookdata ... age="età consigliata"] ed eventuali note aggiuntive [bookdata ... notes="Note aggiuntive"]', 'book-template' ); ?><br/><?php _e( 'I dati possono essere inseriti anche in maniera disordinata: ci penserà il plugin a riordinarli.', 'book-template' ); ?></label></p>
 <?php }
 
-# creazione shortcode dati editoriali
+# Creazione shortcode dati editoriali
 add_shortcode( 'bookdata', 'bookdata' );
 
  function bookdata ($atts, $content = null) {
@@ -116,5 +115,4 @@ add_shortcode( 'bookdata', 'bookdata' );
    return $text;
 }
 
-/* ------------------------------------------------------ */
 ?>
