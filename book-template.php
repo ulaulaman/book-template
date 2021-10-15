@@ -2,12 +2,14 @@
 /*
 Plugin Name: Book Template
 Description: Plugin che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto.
-Version: 2020.0813
+Version: 2021.1016
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
-Plugin URI: https://ulaulaman.github.io/book-template/
+Plugin URI: https://ulaulaman.github.io/#BookTemplate
+GitHub Plugin URI: https://github.com/ulaulaman/book-template
 License: GPLv2 or later
 */
+
 # Caricamento traduzioni
 add_action('plugins_loaded', 'bt_load_translations');
 function bt_load_translations() {
@@ -51,68 +53,76 @@ function bookdata_class_meta_box( $post ) { ?>
 # Creazione shortcode dati editoriali
 add_shortcode( 'bookdata', 'bookdata' );
 
- function bookdata ($atts, $content = null) {
+ function bookdata ( $atts, $content = null ) {
 
-   extract(
-      shortcode_atts(
-         array( 
-		'title' => null,
-		'author' => null,
-		'translator' => null,
-		'publisher' => null,
-		'date' => null,
-		'pages' => null,
-		'type' => null,
-		'col' => null,
-    'price' => null,
-    'age' => null,
-		'isbn' => null,
-		'issn' => null,
-    'notes' => null,
-	 ),
-         $atts
-      )
-   );
+  extract(
+    shortcode_atts(
+      array(
+        'intro' => null,
+        'title' => null,
+        'url' => null,
+        'author' => null,
+        'translator' => null,
+        'publisher' => null,
+        'date' => null,
+        'pages' => null,
+        'type' => null,
+        'col' => null,
+        'price' => null,
+        'age' => null,
+        'isbn' => null,
+        'issn' => null,
+        'notes' => null,
+      ),
+      $atts
+    )
+  );
 
-   $intro = __( 'Abbiamo parlato di:', 'book-template' );
+  $book='<p>';
 
-   $book = '<p><strong>'.$intro.'</strong><br/><em>'.$title.'</em><br/>'.$author;
-   
-   if ( $translator <> null )
-   {$translator = __( 'Traduzione di ', 'book-template' ).$translator;
-    $book = $book.'<br/>'.$translator;}
-   else
-   {$book = $book;}
+  if ( $intro <> null ) {
+    $book = $book.'<strong>'.$intro.'</strong>';
+  } else {
+    $book = $book.'<strong>'.__( 'Abbiamo parlato di:', 'book-template' ).'</strong>';
+  }
 
-   $pages = $pages.' '.__( 'pagine', 'book-template' );
-   
-   if ( $col <> null )
-   {$book = $book.'<br/>'.$publisher.', '.$date.'<br/>'.$pages.', '.$type.', '.$col.' – '.$price;}
-   else
-   {$book = $book.'<br/>'.$publisher.', '.$date.'<br/>'.$pages.', '.$type.' – '.$price;}
+  if ( $url <> null ) {
+    $book = $book.'<br/><a href="'.$url.' target="book"><wm>'.$title.'</em></a><br/>'.$author;
+  } else {
+    $book = $book.'<br/><em>'.$title.'</em><br/>'.$author;
+  }
 
-   if ( $age <> null )
-   {$book = $book.'<br/>'.__( 'Lettura consigliata per ', 'book-template' ).$age;}
-   else
-   {$book = $book;}
+  if ( $translator <> null ) {
+    $book = $book.'<br/>'.__( 'Traduzione di ', 'book-template' ).$translator;
+  }
 
-   if ( $isbn <> null )
-   {$book = $book.'<br/>ISBN: '.$isbn;}
-   else
-   {
-   if ( $issn <> null )
-   {$book = $book.'<br/>ISSN: '.$issn;}
-   else
-   {$book = $book;}
-   }
+  $pages = $pages.' '.__( 'pagine', 'book-template' );
 
-   if ( $notes <> null )
-   {$book = $book.'<br/>'.$notes;}
-   else
-   {$book = $book;}
+  if ( $col <> null ) {
+    $book = $book.'<br/>'.$publisher.', '.$date.'<br/>'.$pages.', '.$type.', '.$col.' – '.$price;
+  } else {
+    $book = $book.'<br/>'.$publisher.', '.$date.'<br/>'.$pages.', '.$type.' – '.$price;
+  }
 
-   $text = $book;
-   return $text;
+  if ( $age <> null ) {
+    $book = $book.'<br/>'.__( 'Lettura consigliata ', 'book-template' ).$age;
+  }
+
+  if ( $isbn <> null ) {
+    $book = $book.'<br/>ISBN: '.$isbn;
+  } else {
+    if ( $issn <> null ) {
+      $book = $book.'<br/>ISSN: '.$issn;
+    }
+  }
+  
+  if ( $notes <> null ) {
+    $book = $book.'<br/>'.$notes;
+  }
+
+  $book = $book.'</p>';
+  
+  return $book;
 }
 
 ?>
