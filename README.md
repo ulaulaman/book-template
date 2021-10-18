@@ -14,8 +14,10 @@ In caso di fumetto o libro illustrato, inserire il colore
 
 [bookdata ... col="colore,b/n"]
 
-Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"], l'età consigliata  [bookdata ... age="età consigliata"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"]
+Possono essere inseriti opzionalmente ISBN [bookdata ... isbn="codice"] o ISSN [bookdata ... issn="codice"], il traduttore [bookdata ... translator="Traduttore"], l'età consigliata  [bookdata ... age="età consigliata"] ed eventuali note aggiuntive [dati_editoriali ... notes="Note aggiuntive"].
+
 Inoltre è possibile personalizzare il messaggio di apertura della scheda con il parametro *intro* e inserire un *link* relativo al libro con il parametro *url*.
+
 I dati possono essere inseriti anche in maniera disordinata: ci penserà il *plugin* a riordinarli!
 
 ## Screenshot
@@ -26,7 +28,7 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il *plu
 2. Vai nelle impostazioni del GitHub Updater, quindi nella scheda *Install Plugin*
 3. Qui incolla il *permalink* del [*repository* su GitHub](https://github.com/ulaulaman/book-template)
 4. Una volta installato, attiva
-5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2020.0813/book-template.2020.0813.zip) in allegato alla [release 2020.0813](https://github.com/ulaulaman/book-template/releases/tag/2020.0813), quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
+5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2021.1016/book-template.2021.1016.zip) in allegato alla [release 2021.1016](https://github.com/ulaulaman/book-template/releases/tag/2021.1016), quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 ## Changelog
 * 2021.1016 Aggiunti due nuovi parametri: *intro*, per personalizzare la prima righa, e *url* per inserire in corrispondenza del titolo una possibile scheda dello stesso

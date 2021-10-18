@@ -30,7 +30,7 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il *plu
 2. Vai nelle impostazioni del GitHub Updater, quindi nella scheda *Install Plugin*
 3. Qui incolla il *permalink* del [*repository* su GitHub](https://github.com/ulaulaman/book-template)
 4. Una volta installato, attiva
-5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2020.0813/book-template.2020.0813.zip) in allegato alla [release 2018.0213](https://github.com/ulaulaman/book-template/releases/tag/2020.0813), quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
+5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2021.1016/book-template.2021.1016.zip) in allegato alla [release 2021.1016](https://github.com/ulaulaman/book-template/releases/tag/2021.1016), quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 == Changelog ==
 * 2021.1016 Aggiunti due nuovi parametri: *intro*, per personalizzare la prima righa, e *url* per inserire in corrispondenza del titolo una possibile scheda dello stesso
