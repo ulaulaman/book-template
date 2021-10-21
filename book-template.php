@@ -2,7 +2,7 @@
 /*
 Plugin Name: Book Template
 Description: Plugin che aggiunge uno shortcode per la creazione di un box con i dati editoriali di un libro o di un fumetto.
-Version: 2021.1016
+Version: 2021.1021
 Author: Gianluigi Filippelli
 Author URI: http://dropseaofulaula.blogspot.it/
 Plugin URI: https://ulaulaman.github.io/#BookTemplate
@@ -87,7 +87,7 @@ add_shortcode( 'bookdata', 'bookdata' );
   }
 
   if ( $url <> null ) {
-    $book = $book.'<br/><a href="'.$url.' target="book"><wm>'.$title.'</em></a><br/>'.$author;
+    $book = $book.'<br/><a href="'.$url.'" target="book"><wm>'.$title.'</em></a><br/>'.$author;
   } else {
     $book = $book.'<br/><em>'.$title.'</em><br/>'.$author;
   }
