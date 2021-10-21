@@ -31,6 +31,7 @@ I dati possono essere inseriti anche in maniera disordinata: ci penserà il *plu
 5. In alternativa scarica il [*file* .zip](https://github.com/ulaulaman/book-template/releases/download/2021.1016/book-template.2021.1016.zip) in allegato alla [release 2021.1016](https://github.com/ulaulaman/book-template/releases/tag/2021.1016), quindi scompattalo all'interno della cartella dei *plugin* della tua installazione wordpress
 
 ## Changelog
+* 2021.1021 Corretto errore nell'*html* della scheda
 * 2021.1016 Aggiunti due nuovi parametri: *intro*, per personalizzare la prima righa, e *url* per inserire in corrispondenza del titolo una possibile scheda dello stesso
 * 2020.0813 Aggiunto allo *shortcode* il campo dell'età consigliata
 * 2020.0718.1 Corretti errori codice
